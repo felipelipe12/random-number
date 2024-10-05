@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange-050: #fff7ed;
+    --orange-300: #fdba74;
+    --orange-500: #f97316;
+    --orange-700: #c2410c;
+    --orange-950: #431407;
+}
+
+body {
+    background-color: var(--orange-700);
+    font-family: "Lobster", sans-serif;
+    user-select: none;
+    height: 100dvh;
+}
+
+h1 {
+    font-size: 54px;
+}
+
+h2 {
+    color: var(--orange-950);
+    font-size: 24px;
+}
+
+button {
+    font-family: "Lobster", sans-serif;
+    color: var(--orange-050);
+}
+
+section.random-number {
+    position: relative;
+    height: 100%;
+}
+
+section.random-number div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    height: 100%;
+    width: 480px;
+}
+
+section.random-number div.container h1.random-number__title {
+    color: var(--orange-300);
+    filter: drop-shadow(0px 5px 0px var(--orange-950));
+}
+
+section.random-number div.container div.random-number__card {
+    background-color: var(--orange-300);
+    border-radius: 25px;
+    box-shadow: var(--orange-950) 0px 10px 10px;
+    padding: 30px;
+    height: 350px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.random-number div.container div.random-number__card div.random-number__card--inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+section.random-number div.container div.random-number__card div.random-number__card--inputs div.random-number__input {
+    background-color: var(--orange-700);
+    border-radius: 15px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+section.random-number div.container div.random-number__card div.random-number__card--inputs div.random-number__input label {
+    background-color: var(--orange-500);
+    border-radius: 10px;
+    color: var(--orange-050);
+    font-size: 28px;
+    padding: 5px 10px;
+}
+
+section.random-number div.container div.random-number__card div.random-number__card--inputs div.random-number__input input[type=number] {
+    border: 3px solid var(--orange-500);
+    border-radius: 15px;
+    color: var(--orange-950);
+    font-family: "Lobster", sans-serif;
+    font-size: 36px;
+    outline: none;
+    text-align: center;
+    padding: 15px;
+    width: 100px;
+}
+
+section.random-number div.container div.random-number__card div.random-number__card--inputs div.random-number__input input[type=number]::-webkit-outer-spin-button,
+section.random-number div.container div.random-number__card div.random-number__card--inputs div.random-number__input input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+section.random-number div.container div.random-number__card div.random-number__card--inputs span.random-number__divisor i {
+    color: var(--orange-950);
+    font-size: 48px;
+}
+
+section.random-number div.container div.random-number__card button.random-number__button {
+    background-color: var(--orange-700);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 5px var(--orange-950);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    transition: .3s;
+}
+
+section.random-number div.container div.random-number__card button.random-number__button:active {
+    box-shadow: 0 0 var(--orange-950);
+    transform: translateY(5px);
+}
