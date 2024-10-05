@@ -20,8 +20,8 @@
             <div class="random-number__card">
                 <div class="random-number__card--inputs">
                     <div class="random-number__input">
-                        <label for="min-input">Minimum</label>
-                        <input id="min-input" type="number">
+                        <label for="min-value">Minimum</label>
+                        <input id="min-value" type="number">
                     </div>
                     <span class="random-number__divisor">
                         <i class="fa-solid fa-arrows-left-right"></i>
@@ -31,11 +31,26 @@
                         <input id="max-value" type="number">
                     </div>
                 </div>
-                <button type="button" class="random-number__button">Generate</button>
+                <button id="button-generate" type="button" class="random-number__button">Generate</button>
             </div>
         </div>
-        <div>
-
+        <!-- Popup -->
+        <div id="popup-validate" class="random-number__popup hidden">
+            <div class="random-number__popup--card">
+                <h2 class=""></h2>
+                <div class="">
+                    <button id="" type="button">Continue</button>
+                </div>
+            </div>
+        </div>
+        <div id="popup-result" class="random-number__popup hidden">
+            <div class="random-number__popup--card">
+                <h2 class="random-number__card--title"></h2>
+                <div class="random-number__card--buttons">
+                    <button id="button-result-continue" type="button">Continue</button>
+                    <button id="button-result-restart" type="button">Restart</button>
+                </div>
+            </div>
         </div>
     </section>
     <script src="/js/script.js"></script>
