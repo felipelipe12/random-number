@@ -1,3 +1,11 @@
+function inputLength(input, maxLength) {
+    input.addEventListener('input', function () {
+        if (this.value.length > maxLength) {
+            this.value = this.value.slice(0, maxLength);
+        }
+    });
+}
+
 function showPopup(popup) {
     popup.classList.remove('hidden');
     popup.classList.add('show');
@@ -7,6 +15,11 @@ function hidePopup(popup) {
     popup.classList.remove('show');
     popup.classList.add('hidden');
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    inputLength(document.getElementById('max-value'), 3);
+    inputLength(document.getElementById('min-value'), 3);
+});
 
 document.getElementById('button-generate').addEventListener('click', function () {
     const max = parseInt(document.getElementById('max-value').value);
