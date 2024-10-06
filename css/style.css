@@ -30,7 +30,6 @@ h2 {
 
 button {
     font-family: "Lobster", sans-serif;
-    color: var(--orange-050);
 }
 
 section.random-number {
@@ -118,12 +117,12 @@ section.random-number div.container div.random-number__card div.random-number__c
     color: var(--orange-300);
 }
 
-section.random-number div.container div.random-number__card div.random-number__card--inputs span.random-number__divisor i {
+section.random-number div.container div.random-number__card div.random-number__card--inputs div.random-number__divisor i {
     color: var(--orange-950);
     font-size: 48px;
 }
 
-section.random-number div.container div.random-number__card button.random-number__button {
+section.random-number div.container div.random-number__card button {
     background-color: var(--orange-700);
     border-radius: 10px;
     color: var(--orange-050);
@@ -139,7 +138,7 @@ section.random-number div.container div.random-number__card button.random-number
     transition: .3s;
 }
 
-section.random-number div.container div.random-number__card button.random-number__button:active {
+section.random-number div.container div.random-number__card button:active {
     box-shadow: 0 0 var(--orange-950);
     transform: translateY(5px);
 }
@@ -186,7 +185,7 @@ section.random-number div.random-number__popup div.random-number__popup--card sp
     filter: drop-shadow(0px 5px 0px var(--orange-950));
 }
 
-section.random-number div.random-number__popup div.random-number__popup--card button.random-number__card--button {
+section.random-number div.random-number__popup div.random-number__popup--card button {
     background-color: var(--orange-700);
     font-size: 20px;
     border-radius: 10px;
@@ -197,17 +196,17 @@ section.random-number div.random-number__popup div.random-number__popup--card bu
     transition: .3s;
 }
 
-section.random-number div.random-number__popup div.random-number__popup--card div.random-number__card--buttons button.random-number__card--button:nth-child(1) {
+section.random-number div.random-number__popup div.random-number__popup--card div.random-number__card--buttons button:nth-child(1) {
     background-color: var(--orange-700);
     color: var(--orange-050);
 }
 
-section.random-number div.random-number__popup div.random-number__popup--card div.random-number__card--buttons button.random-number__card--button:nth-child(2) {
+section.random-number div.random-number__popup div.random-number__popup--card div.random-number__card--buttons button:nth-child(2) {
     background-color: var(--orange-050);
     color: var(--orange-700);
 }
 
-section.random-number div.random-number__popup div.random-number__popup--card button.random-number__card--button:active {
+section.random-number div.random-number__popup div.random-number__popup--card button:active {
     box-shadow: 0 0 var(--orange-950);
     transform: translateY(5px);
 }
@@ -252,7 +251,7 @@ section.random-number div.random-number__popup div.random-number__popup--card bu
         font-size: 20px;
     }
 
-    section.random-number div.container div.random-number__card div.random-number__card--inputs span.random-number__divisor i {
+    section.random-number div.container div.random-number__card div.random-number__card--inputs div.random-number__divisor i {
         font-size: 36px;
     }
 
