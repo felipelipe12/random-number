@@ -14,7 +14,7 @@
 
 body {
     background-color: var(--orange-700);
-    font-family: "Lobster", sans-serif;
+    font-family: "Righteous", sans-serif;
     user-select: none;
     height: 100dvh;
 }
@@ -29,7 +29,7 @@ h2 {
 }
 
 button {
-    font-family: "Lobster", sans-serif;
+    font-family: "Righteous", sans-serif;
 }
 
 section.random-number {
@@ -99,7 +99,7 @@ section.random-number div.container div.random-number__card div.random-number__c
     border: 3px solid var(--orange-500);
     border-radius: 15px;
     color: var(--orange-950);
-    font-family: "Lobster", sans-serif;
+    font-family: "Righteous", sans-serif;
     font-size: 36px;
     outline: none;
     text-align: center;
@@ -187,6 +187,7 @@ section.random-number div.random-number__popup div.random-number__popup--card sp
 
 section.random-number div.random-number__popup div.random-number__popup--card button {
     background-color: var(--orange-700);
+    color: var(--orange-050);
     font-size: 20px;
     border-radius: 10px;
     border: none;
