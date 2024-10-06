@@ -12,7 +12,7 @@
   </div>
 </div>
 
-# Objective
+## Objective
 
 Project developed to practice the logic and practices of structuring and stylization.
 
