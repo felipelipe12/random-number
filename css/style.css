@@ -236,6 +236,7 @@ section.random-number div.random-number__popup div.random-number__popup--card bu
 
     section.random-number div.container div.random-number__card div.random-number__card--inputs {
         flex-direction: column;
+        gap: 10px;
     }
 
     section.random-number div.container div.random-number__card div.random-number__card--inputs div.random-number__input {
@@ -249,6 +250,10 @@ section.random-number div.random-number__popup div.random-number__popup--card bu
 
     section.random-number div.container div.random-number__card div.random-number__card--inputs div.random-number__input input[type=number] {
         font-size: 20px;
+    }
+
+    section.random-number div.container div.random-number__card div.random-number__card--inputs span.random-number__divisor i {
+        font-size: 36px;
     }
 
 }
