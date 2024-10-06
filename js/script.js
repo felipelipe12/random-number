@@ -1,26 +1,54 @@
+function showPopup(popup) {
+    popup.classList.remove('hidden');
+    popup.classList.add('show');
+}
+
+function hidePopup(popup) {
+    popup.classList.remove('show');
+    popup.classList.add('hidden');
+}
+
 document.getElementById('button-generate').addEventListener('click', function () {
     const max = parseInt(document.getElementById('max-value').value);
     const min = parseInt(document.getElementById('min-value').value);
+
+    const popupValidate = document.getElementById('popup-validate');
+    const messageValidate = document.getElementById('message-validate');
+
+    if (isNaN(max) || isNaN(min)) {
+        messageValidate.textContent = "Please enter valid values.";
+        showPopup(popupValidate);
+        return;
+    }
+
+    if (min >= max) {
+        messageValidate.textContent = "The minimum value must be less than the maximum value.";
+        showPopup(popupValidate);
+        return;
+    }
+
+    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    const popupResult = document.getElementById('popup-result');
+    const valueResult = document.getElementById('value-result');
+
+    valueResult.textContent = randomNumber;
+    showPopup(popupResult);
 });
 
-document.getElementById('button-result-restart').addEventListener('click', function () {
-    window.location.reload();
+document.getElementById('button-validate').addEventListener('click', function () {
+    const popupValidate = document.getElementById('popup-validate');
+    hidePopup(popupValidate);
 });
 
+document.getElementById('result-continue').addEventListener('click', function () {
+    const popupResult = document.getElementById('popup-result');
+    hidePopup(popupResult);
+});
 
-// function generateNumber() {
+document.getElementById('result-restart').addEventListener('click', function () {
+    const popupResult = document.getElementById('popup-result');
+    hidePopup(popupResult);
 
-
-//     if (isNaN(min) || isNaN(max)) {
-//         alert("Por favor, insira valores válidos.");
-//         return;
-//     }
-
-//     if (min >= max) {
-//         alert("O valor mínimo deve ser menor que o valor máximo.");
-//         return;
-//     }
-
-//     const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-//     alert("Número gerado: " + randomNumber);
-// }
+    document.getElementById('max-value').value = '';
+    document.getElementById('min-value').value = '';
+});

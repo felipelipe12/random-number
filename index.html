@@ -21,14 +21,14 @@
                 <div class="random-number__card--inputs">
                     <div class="random-number__input">
                         <label for="min-value">Minimum</label>
-                        <input id="min-value" type="number">
+                        <input id="min-value" type="number" placeholder="?">
                     </div>
                     <span class="random-number__divisor">
                         <i class="fa-solid fa-arrows-left-right"></i>
                     </span>
                     <div class="random-number__input">
                         <label for="max-value">Maximum</label>
-                        <input id="max-value" type="number">
+                        <input id="max-value" type="number" placeholder="?">
                     </div>
                 </div>
                 <button id="button-generate" type="button" class="random-number__button">Generate</button>
@@ -37,18 +37,17 @@
         <!-- Popup -->
         <div id="popup-validate" class="random-number__popup hidden">
             <div class="random-number__popup--card">
-                <h2 class=""></h2>
-                <div class="">
-                    <button id="" type="button">Continue</button>
-                </div>
+                <h2 id="message-validate" class="random-number__card--title"></h2>
+                <button id="button-validate" type="button" class="random-number__card--button">Ok!</button>
             </div>
         </div>
         <div id="popup-result" class="random-number__popup hidden">
             <div class="random-number__popup--card">
-                <h2 class="random-number__card--title"></h2>
+                <h2 class="random-number__card--title">The number chosen was:</h2>
+                <span id="value-result" class="random-number__card--text"></span>
                 <div class="random-number__card--buttons">
-                    <button id="button-result-continue" type="button">Continue</button>
-                    <button id="button-result-restart" type="button">Restart</button>
+                    <button id="result-continue" type="button" class="random-number__card--button">Continue</button>
+                    <button id="result-restart" type="button" class="random-number__card--button">Restart</button>
                 </div>
             </div>
         </div>
