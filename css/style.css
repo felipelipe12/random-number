@@ -178,7 +178,7 @@ section.random-number div.random-number__popup div.random-number__popup--card di
     gap: 20px;
 }
 
-section.random-number div.random-number__popup div.random-number__popup--card span.random-number__card--text {
+section.random-number div.random-number__popup div.random-number__popup--card span {
     color: var(--orange-700);
     font-size: 48px;
     font-weight: 900;
