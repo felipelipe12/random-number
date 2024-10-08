@@ -30,7 +30,8 @@ h2 {
     font-size: 28px;
 }
 
-button {
+button,
+input {
     font-family: "Righteous", sans-serif;
 }
 
@@ -87,7 +88,7 @@ section.random-number div.container div.random-number__card div.random-number__c
     background-color: var(--orange-500);
     border-radius: 10px;
     color: var(--orange-050);
-    font-size: 28px;
+    font-size: 24px;
     padding: 5px 10px;
 }
 
@@ -96,7 +97,6 @@ section.random-number div.container div.random-number__card div.random-number__c
     border: 3px solid var(--orange-500);
     border-radius: 15px;
     color: var(--orange-950);
-    font-family: "Righteous", sans-serif;
     font-size: 36px;
     outline: none;
     text-align: center;
@@ -107,7 +107,6 @@ section.random-number div.container div.random-number__card div.random-number__c
 section.random-number div.container div.random-number__card div.random-number__card--inputs div.random-number__input input[type=number]::-webkit-outer-spin-button,
 section.random-number div.container div.random-number__card div.random-number__card--inputs div.random-number__input input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    margin: 0;
 }
 
 section.random-number div.container div.random-number__card div.random-number__card--inputs div.random-number__input input[type=number]::placeholder {

@@ -17,16 +17,16 @@ function hidePopup(popup) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    inputLength(document.getElementById('max-value'), 3);
-    inputLength(document.getElementById('min-value'), 3);
+    inputLength(document.getElementById('maxValue'), 3);
+    inputLength(document.getElementById('minValue'), 3);
 });
 
-document.getElementById('button-generate').addEventListener('click', function () {
-    const max = parseInt(document.getElementById('max-value').value);
-    const min = parseInt(document.getElementById('min-value').value);
+document.getElementById('buttonGenerate').addEventListener('click', function () {
+    const max = parseInt(document.getElementById('maxValue').value);
+    const min = parseInt(document.getElementById('minValue').value);
 
-    const popupValidate = document.getElementById('popup-validate');
-    const messageValidate = document.getElementById('message-validate');
+    const popupValidate = document.getElementById('popupValidate');
+    const messageValidate = document.getElementById('messageValidate');
 
     if (isNaN(max) || isNaN(min)) {
         messageValidate.textContent = "Please enter valid values.";
@@ -41,27 +41,27 @@ document.getElementById('button-generate').addEventListener('click', function ()
     }
 
     const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-    const popupResult = document.getElementById('popup-result');
-    const valueResult = document.getElementById('value-result');
+    const popupResult = document.getElementById('popupResult');
+    const valueResult = document.getElementById('valueResult');
 
     valueResult.textContent = randomNumber;
     showPopup(popupResult);
 });
 
-document.getElementById('button-validate').addEventListener('click', function () {
-    const popupValidate = document.getElementById('popup-validate');
+document.getElementById('buttonValidate').addEventListener('click', function () {
+    const popupValidate = document.getElementById('popupValidate');
     hidePopup(popupValidate);
 });
 
-document.getElementById('result-continue').addEventListener('click', function () {
-    const popupResult = document.getElementById('popup-result');
+document.getElementById('resultContinue').addEventListener('click', function () {
+    const popupResult = document.getElementById('popupResult');
     hidePopup(popupResult);
 });
 
-document.getElementById('result-restart').addEventListener('click', function () {
-    const popupResult = document.getElementById('popup-result');
+document.getElementById('resultRestart').addEventListener('click', function () {
+    const popupResult = document.getElementById('popupResult');
     hidePopup(popupResult);
 
-    document.getElementById('max-value').value = '';
-    document.getElementById('min-value').value = '';
+    document.getElementById('maxValue').value = '';
+    document.getElementById('minValue').value = '';
 });
